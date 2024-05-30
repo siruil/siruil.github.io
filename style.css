@@ -1,0 +1,56 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    margin: 5% 15%; /* Sets top and bottom margins to 10% and left and right margins to 30% */
+    box-sizing: border-box;
+}
+
+.left-column {
+    width: 25%; /* Adjusted for simplicity; consider dynamic adjustments if needed */
+    padding: 40px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.right-column {
+    width: 75%; /* Adjusted for simplicity; consider dynamic adjustments if needed */
+    padding: 15px 50px;
+    box-sizing: border-box;
+}
+
+.profile-pic {
+    width: 100%;
+    border-radius: 50%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Styles for links */
+a {
+    color: #1E90FF; /* This is a 'pretty blue' color, specifically DodgerBlue */
+    text-decoration: none; /* Removes underline from links */
+}
+
+a:hover, a:active {
+    text-decoration: none; /* Suppresses the underline */
+    color: #00008b; /* Changes link color on hover */
+}
+
+ul, p, li { /* Apply dark gray text color to non-header elements */
+    color: #333; /* Dark gray color */
+    line-height: 1.25;
+}
