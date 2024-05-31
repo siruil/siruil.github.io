@@ -77,4 +77,9 @@ ul, p, li {
     h1, h2, h3, h4, h5, h6 {
         font-size: 1.25em; /* Reduces heading font sizes proportionally */
     }
+
+    .profile-pic {
+        width: 60%;  /* Reduces the image width to 60% of its container on small screens */
+        margin: 0 auto;  /* Centers the image within the column */
+    }
 }
