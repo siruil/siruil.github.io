@@ -58,16 +58,16 @@ ul, p, li {
 @media (max-width: 768px) {
     .container {
         flex-direction: column; /* Stacks the columns vertically */
-        margin: 5% 10%; /* Reduces side margins */
+        margin: 2% 5%; /* Significantly reduces side margins */
     }
     
     .left-column, .right-column {
         width: 100%; /* Takes full width of the container */
-        padding: 20px; /* Reduces padding */
+        padding: 10px; /* Reduces padding */
     }
     
     .right-column {
-        padding: 15px; /* Adjusts padding in the right column */
+        padding: 10px; /* Further reduces padding in the right column */
     }
 
     body, html {
