@@ -8,19 +8,19 @@ body, html {
 
 .container {
     display: flex;
-    margin: 5% 15%; /* Sets top and bottom margins to 10% and left and right margins to 30% */
+    margin: 5% 15%;
     box-sizing: border-box;
 }
 
 .left-column {
-    width: 25%; /* Adjusted for simplicity; consider dynamic adjustments if needed */
+    width: 25%;
     padding: 40px;
     text-align: center;
     box-sizing: border-box;
 }
 
 .right-column {
-    width: 75%; /* Adjusted for simplicity; consider dynamic adjustments if needed */
+    width: 75%;
     padding: 15px 50px;
     box-sizing: border-box;
 }
@@ -39,18 +39,42 @@ li {
     margin-bottom: 10px;
 }
 
-/* Styles for links */
 a {
-    color: #1E90FF; /* This is a 'pretty blue' color, specifically DodgerBlue */
-    text-decoration: none; /* Removes underline from links */
+    color: #1E90FF;
+    text-decoration: none;
 }
 
 a:hover, a:active {
-    text-decoration: none; /* Suppresses the underline */
-    color: #00008b; /* Changes link color on hover */
+    text-decoration: none;
+    color: #00008b;
 }
 
-ul, p, li { /* Apply dark gray text color to non-header elements */
-    color: #333; /* Dark gray color */
+ul, p, li {
+    color: #333;
     line-height: 1.25;
+}
+
+/* Responsive adjustments for screens smaller than 768px */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stacks the columns vertically */
+        margin: 5% 10%; /* Reduces side margins */
+    }
+    
+    .left-column, .right-column {
+        width: 100%; /* Takes full width of the container */
+        padding: 20px; /* Reduces padding */
+    }
+    
+    .right-column {
+        padding: 15px; /* Adjusts padding in the right column */
+    }
+
+    body, html {
+        font-size: 14px; /* Smaller font size for smaller screens */
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 1.25em; /* Reduces heading font sizes proportionally */
+    }
 }
