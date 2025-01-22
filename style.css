@@ -49,10 +49,19 @@ a:hover, a:active {
     color: #00008b;
 }
 
+small a {
+    color: #00008b; /* Darker blue */
+}
+
+small a:hover, small a:active {
+    color: #000066; /* Even darker blue for hover and active states */
+}
+
 ul, p, li {
     color: #333;
     line-height: 1.25;
 }
+
 
 /* Responsive adjustments for screens smaller than 768px */
 @media (max-width: 768px) {
