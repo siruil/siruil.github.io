@@ -50,7 +50,7 @@ a:hover, a:active {
 }
 
 small a {
-    color: #00008b; /* Darker blue */
+    color: #1E90FF; /* Darker blue */
 }
 
 small a:hover, small a:active {
@@ -91,4 +91,14 @@ ul, p, li {
         width: 60%;  /* Reduces the image width to 60% of its container on small screens */
         margin: 0 auto;  /* Centers the image within the column */
     }
+}
+
+.highlight-author {
+    text-decoration: underline;
+    font-weight: bold;
+    color: rgb(60, 60, 60);
+}
+
+.dim-author {
+    color: gray;
 }
